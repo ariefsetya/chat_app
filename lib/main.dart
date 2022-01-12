@@ -149,13 +149,11 @@ class _MyHomePageState extends State<MyHomePage> {
 
     setState(() {
       _messages.insert(0,
-          Row(
+          Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             mainAxisAlignment: MainAxisAlignment.start,
             mainAxisSize: MainAxisSize.min,
             children: [
-              const Icon(Icons.person,size: 35,),
-              const SizedBox(width: 4,),
               Container(
                 margin: const EdgeInsets.symmetric(vertical: 2),
                 decoration: BoxDecoration(
@@ -195,8 +193,8 @@ class _MyHomePageState extends State<MyHomePage> {
 
     setState(() {
       _messages.insert(0,
-          Row(
-            crossAxisAlignment: CrossAxisAlignment.start,
+          Column(
+            crossAxisAlignment: CrossAxisAlignment.end,
             mainAxisAlignment: MainAxisAlignment.end,
             mainAxisSize: MainAxisSize.min,
             children: [
@@ -224,8 +222,6 @@ class _MyHomePageState extends State<MyHomePage> {
                   ],
                 ),
               ),
-              const SizedBox(width: 4,),
-              const Icon(Icons.person_rounded,size: 35,),
             ],
           )
       );
